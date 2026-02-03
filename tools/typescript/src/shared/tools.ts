@@ -16,6 +16,7 @@ import listCouponsTool from '@/shared/coupons/listCoupons';
 import createCouponTool from '@/shared/coupons/createCoupon';
 import createRefundTool from '@/shared/refunds/createRefund';
 import listPaymentIntentsTool from '@/shared/paymentIntents/listPaymentIntents';
+import searchPaymentIntentsTool from '@/shared/paymentIntents/searchPaymentIntents';
 import listSubscriptionsTool from '@/shared/subscriptions/listSubscriptions';
 import cancelSubscriptionTool from '@/shared/subscriptions/cancelSubscription';
 import updateSubscriptionTool from '@/shared/subscriptions/updateSubscription';
@@ -61,6 +62,7 @@ const tools = (context: Context): StripeToolDefinition[] => [
   retrieveBalanceTool(context),
   createRefundTool(context),
   listPaymentIntentsTool(context),
+  searchPaymentIntentsTool(context),
   listSubscriptionsTool(context),
   cancelSubscriptionTool(context),
   updateSubscriptionTool(context),

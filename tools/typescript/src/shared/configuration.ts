@@ -18,7 +18,7 @@ export type Object =
   | 'documentation'
   | 'coupons';
 
-export type Permission = 'create' | 'update' | 'read';
+export type Permission = 'create' | 'update' | 'read' | 'search';
 
 export type Actions = {
   [K in Object]?: {
